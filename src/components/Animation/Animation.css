@@ -1,0 +1,17 @@
+.daonimia-gif-container{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    clip-path: polygon(24% 0, 80% 0%, 80% 100%, 24% 100%);
+    z-index: 1;
+}
+
+.daonimia-gif{
+    width: 90%;
+}

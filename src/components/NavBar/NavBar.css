@@ -1,0 +1,46 @@
+.nav-bar-container{
+    position: fixed;
+    padding: 0.5rem 0;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 3;
+}
+
+.background-translucid{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 1.5s;
+}
+
+.background-transparent{
+    background-color: rgba(0,0,0,0);
+    transition: 1.5s;
+}
+
+.nav-bar-logo{
+    font-family:'Barrio', cursive;
+    font-size: 1.8rem;
+}
+
+.nav-bar-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.nav-bar-nav-elements:hover{
+    cursor: pointer;
+}
+
+.nav-bar-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}

@@ -1,0 +1,11 @@
+.body-container{
+    position: relative;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    z-index: 2;
+}

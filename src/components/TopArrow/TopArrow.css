@@ -1,0 +1,19 @@
+.top-arrow{
+    transform: rotate(45deg);
+    border-top: 2px solid rgb(93, 93, 93);
+    border-left: 2px solid rgb(93, 93, 93);
+}
+
+.arrow-body{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 6rem;
+}
+
+.arrow-footer{
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 4.4rem;
+}

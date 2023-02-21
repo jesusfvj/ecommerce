@@ -1,0 +1,7 @@
+.sm-cart-icon{
+    width: 1.8rem;
+}
+
+.sm-cart-icon:hover{
+    cursor: pointer;
+}

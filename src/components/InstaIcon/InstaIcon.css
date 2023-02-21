@@ -1,0 +1,16 @@
+.sm-inst-icon{
+    width: 1.2rem;
+}
+
+.sm-inst-icon:hover{
+    cursor: pointer;
+}
+
+.lg-inst-icon{
+    width: 5rem;
+    align-self: center;
+}
+
+.lg-inst-icon:hover{
+    cursor: pointer;
+}
