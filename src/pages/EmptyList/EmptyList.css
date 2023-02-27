@@ -1,0 +1,15 @@
+.empty-section-container{
+    display: relative;
+    width: 90%;
+    height: 100%;
+}
+
+.empty-section-img{
+    top: 0;
+    left: 0;
+}
+
+.empty-sectino-text{
+    top: 0;
+    
+}

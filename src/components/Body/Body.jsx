@@ -4,6 +4,7 @@ import eyeIcon from '../../assets/images/eyeIcon.png';
 import nowIcon from '../../assets/images/checkedIcon.png';
 import checkedIcon from '../../assets/images/nowIcon.png';
 import broomIcon from '../../assets/images/broomIcon.png';
+import { EmptyList } from '../../pages';
 
 export const Body = () => {
   return (
@@ -17,8 +18,7 @@ export const Body = () => {
                 <img className='aside-icons' src={broomIcon} alt="" />
                 <p className='aside-number-wishes'>X items</p>
             </aside>
-            <div className='element'>
-            </div>
+            <EmptyList/>
         </div>
     </div>
   )
