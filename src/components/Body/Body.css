@@ -1,0 +1,44 @@
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    background-color: #D4D4D4;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+    border-right: 0.1rem solid #D4D4D4;
+}
+
+.aside-icons{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.aside-number-wishes{
+    color: #D4D4D4;
+    font-size: 0.6rem;
+}
+
+.element{
+    width: 90%;
+    height: 100%;
+}

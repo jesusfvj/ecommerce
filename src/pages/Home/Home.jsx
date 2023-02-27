@@ -1,8 +1,11 @@
 import React from 'react'
-import { Header } from '../../components/Header/Header.jsx';
+import { Header, Body } from '../../components/index.js';
 
 export const Home = () => {
   return (
-    <Header />
+    <body>
+      <Header />
+      <Body />
+    </body>
   )
 }
