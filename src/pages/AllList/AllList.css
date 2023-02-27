@@ -1,7 +1,45 @@
 .all-list-section-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     width: 90%;
     height: 100%;
+}
+
+.wish-list-container{
+    width: 80%;
+}
+
+.wish-list-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 1rem;
+    border-bottom: 2px solid #d4d4d4;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checked-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.delete-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.rewrite-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
 }
