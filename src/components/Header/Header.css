@@ -1,0 +1,17 @@
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vh;
+    width: 100vw;
+    padding-left: 3rem;
+    background-image: url('../../assets/images/wishListMainImage.png');
+    background-size: cover;
+    background-position: right;
+}
+
+.header-h1{
+    margin: 0;
+    padding: 0;
+}
