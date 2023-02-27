@@ -31,6 +31,7 @@
 .aside-icons{
     height: 1.5rem;
     width: 1.5rem;
+    cursor: pointer;
 }
 
 .aside-number-wishes{
