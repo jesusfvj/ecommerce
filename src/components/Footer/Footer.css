@@ -10,6 +10,17 @@
      url('../../assets/fonts/Muhaqu2.ttf') format("truetype");
     }
 
+.main-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
 .footer-container{
     position: relative;
     display: flex;
@@ -17,6 +28,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-image: url("../../assets/images/gradients/green.png");
     background-size: cover;
     background-position: center;

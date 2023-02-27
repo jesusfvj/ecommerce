@@ -1,38 +1,17 @@
 import './MainImage.css';
 import { Triangle } from '../Triangle/Triangle';
 import { Rights } from '../Rights/Rights';
-import {Parallax} from 'react-parallax';
-import image1 from "../../assets/images/mainImage/1.jpg";
+import { Parallax, Background } from 'react-parallax';
 
-const insideStyles = {
-  background: "#fff",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)"
-}
-
-export const MainImage = () => {
+export const MainImage = ({location}) => {
   return (
     <>
-      <Parallax bgImage={image1} strength={500} className="main-image-container">
-        <div className="main-image-rights-container" style={{height: "100vh"}}>
+      <Parallax blur={10} strength={500} className="main-image-container">
+        <Background className={`main-image-rights-container ${location}`}>
           <Rights classAttribute = 'rights-text rights-main-image'/>
-        </div>
+        </Background>
       </Parallax>
       <Triangle />
     </>
   )
 }
-
-/* export const MainImage = () => {
-  return (
-    <>
-      <div className="main-image-container">
-        <Rights classAttribute = 'rights-text rights-main-image'/>
-      </div>
-      <Triangle />
-    </>
-  )
-} */

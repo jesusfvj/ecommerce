@@ -1,12 +1,43 @@
 import "./Mosaic.css";
+import { mainImagesData } from "../../data/data.js";
 
 export const Mosaic = () => {
-    const arrayImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"];
+    console.log("mainImagesData");
+    const handleMouseEnter = (e) => {
+        e.target.nextSibling.style.display = 'flex';
+    };
+    const handleMouseLeave = (e) => {
+        e.target.style.display = 'none';
+    };
+    
     return (
-        arrayImages.map((count, index) => {
-                return <div className={`mosaic-image-${count}`} key={index}></div>;
-    })
+        mainImagesData.map(({ id, title }) => {
+            
+            if(id<=15){
+                return (
+                    <>
+                        <div className={`mosaic-image-${id}`}
+                            key={`image-${new Date().getTime()}`}
+                            onMouseEnter={handleMouseEnter}>
+                        </div>
+                        <div
+                            className={`mosaic-hover-all mosaic-hover-${id}`}
+                            key={`hover-${new Date().getTime()}`}
+                            onMouseLeave={handleMouseLeave}
+                            >
+                            <p className={`mosaic-hover-text-all mosaic-hover-text-${id}`}
+                            key={`hover-text-${new Date().getTime()}`}
+                            >{title}</p>
+                        </div>
+                    </>
+                )
+            } else {
+                return (
+                        <div className={`mosaic-image-text-all mosaic-image-text-${id}`}
+                        key={`image-text-${new Date().getTime()}`}
+                        ></div>
+                )
+            }
+        })
     )
 }
-
-

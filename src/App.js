@@ -1,14 +1,11 @@
 import './App.css';
-import { NavBar, MainImage, Body, Animation, Footer } from './components/index.js';
+
+import { Router } from './routes/Router.jsx';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Animation />
-      <MainImage />
-      <Body />
-      <Footer />
+      <Router />
     </div>
   );
 }

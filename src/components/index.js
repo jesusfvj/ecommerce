@@ -5,3 +5,4 @@ export * from './MainImage/MainImage';
 export * from './Body/Body';
 export * from './Animation/Animation';
 export * from './Footer/Footer';
+export * from './Mosaic/Mosaic';

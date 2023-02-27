@@ -1,11 +1,10 @@
 import './Body.css';
-import { Mosaic } from '../Mosaic/Mosaic.jsx';
 
-export const Body = () => {
+export const Body = (props) => {
   return (
     <>
         <div className="body-container">
-          <Mosaic />
+        {props.children}
         </div>
     </>
   )

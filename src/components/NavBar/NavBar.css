@@ -1,8 +1,6 @@
 .nav-bar-container{
     position: fixed;
-    padding: 0.5rem 0;
     width: 100vw;
-    height: 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,11 +9,15 @@
 }
 
 .background-translucid{
+    height: 3rem;
+    padding: 0.1rem 0;
     background-color: rgba(0, 0, 0, 0.2);
     transition: 1.5s;
 }
 
 .background-transparent{
+    height: 4rem;
+    padding: 0.5rem 0;
     background-color: rgba(0,0,0,0);
     transition: 1.5s;
 }
@@ -33,8 +35,23 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+.nav-bar-nav-elements{
+    color: white;
+    text-decoration: none;
+}
+
 .nav-bar-nav-elements:hover{
     cursor: pointer;
+    color: rgb(169, 169, 169);
+    transition: color 500ms;
+}
+
+.nav-bar-nav-element-location{
+    text-decoration: none;
+    color: rgb(169, 169, 169);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 .nav-bar-icons{
