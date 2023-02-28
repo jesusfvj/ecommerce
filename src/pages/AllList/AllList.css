@@ -4,6 +4,7 @@
     justify-content: flex-start;
     width: 90%;
     height: 100%;
+    overflow-x: scroll;
 }
 
 .wish-list-container{
@@ -26,6 +27,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .checked-icon{

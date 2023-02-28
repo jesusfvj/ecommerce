@@ -7,7 +7,9 @@ export const TaskContext = React.createContext();
 export const Home = () => {
   const [inputRef, setInputRef] = useState(null);
   const [clicked, setClicked] = useState(false);
-  const [task, setTask] = useState([]);
+
+  const items = JSON.parse(localStorage.getItem("wish-list"));
+  const [task, setTask] = useState(items);
   
   return (
     <InputContext.Provider value={{ inputRef, setInputRef, clicked, setClicked }}>

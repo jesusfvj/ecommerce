@@ -22,7 +22,7 @@ export const Aside = () => {
       <img className='aside-icons' src={nowIcon} alt="" />
       <img className='aside-icons' src={checkedIcon} alt="" />
       <img className='aside-icons' src={broomIcon} alt="" />
-      <p className='aside-number-wishes'>X items</p>
+      <p className='aside-number-wishes'>{task.length} items</p>
     </aside>
   )
 }
