@@ -3,3 +3,4 @@ export * from './Body/Body.jsx';
 export * from './Aside/Aside.jsx';
 export * from './AllList/AllList.jsx';
 export * from './EmptyList/EmptyList.jsx';
+export * from './ListRender/ListRender.jsx';

@@ -17,7 +17,7 @@ export const Header = () => {
   });
   
   const handleChangeFormData = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value, ["id"]:counter });
+    setFormData({ ...formData, [e.target.name]: e.target.value, id:counter });
     inputRef.current.placeholder = "Type your wish here";
   };
   
@@ -37,7 +37,7 @@ export const Header = () => {
       inputRef.current.focus();
       setClicked(false);
     }
-  }, [clicked]);
+  }, [clicked, setClicked, setInputRef]);
 
   useEffect(() => {
     inputRef.current.value = "";

@@ -7,9 +7,8 @@ export const InputProvider = ({ children }) => {
   const [inputRef, setInputRef] = useState(null);
   const [clicked, setClicked] = useState(false);
 
-  const items = JSON.parse(localStorage.getItem("wish-list"));
-  const [task, setTask] = useState(items);
-
+  const [task, setTask] = useState(JSON.parse(localStorage.getItem("wish-list")) || []);
+  
   return (
     <InputContext.Provider value={{ inputRef, setInputRef, clicked, setClicked, task, setTask }}>
       {children}
