@@ -8,15 +8,16 @@ export const Header = () => {
   const { task, setTask, setInputRef, setClicked, clicked } = useContext(InputContext);
   const inputRef = useRef(null);
   const originalFormData = {
-    id:  null,
+    id: "",
     text: "",
     pending: true,
     inProgress: false,
     done: false,
     isEditing: false,
   }
-  const [formData, setFormData] = useState([originalFormData]);
-  
+
+  const [formData, setFormData] = useState(originalFormData);
+
   const handleChangeFormData = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value, id:v4() });
     inputRef.current.placeholder = "Type your wish here";

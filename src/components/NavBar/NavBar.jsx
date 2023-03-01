@@ -1,4 +1,4 @@
-import './NavBar.css';
+/* import './NavBar.css';
 import { InstaIcon } from '../InstaIcon/InstaIcon';
 import { CartIcon } from '../CartIcon/CartIcon';
 import { useState, useEffect } from 'react';
@@ -55,4 +55,4 @@ export const NavBar = () => {
       </nav>
     </div>
   )
-}
+} */
