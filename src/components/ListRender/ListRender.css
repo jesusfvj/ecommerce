@@ -30,18 +30,11 @@
     cursor: pointer;
 }
 
-.checked-icon{
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.delete-icon{
+.list-icons{
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .rewrite-icon{
-    width: 1.5rem;
-    height: 1.5rem;
     margin-top: 0.2rem;
 }

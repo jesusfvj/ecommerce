@@ -2,11 +2,11 @@ import { useRef, useContext, useEffect, useState } from 'react';
 import InputContext from '../../context/InputContext.jsx';
 import './Header.css';
 import icon from '../../assets/images/addIconWhite.png';
+import { v4 } from 'uuid';
 
 export const Header = () => {
   const { task, setTask, setInputRef, setClicked, clicked } = useContext(InputContext);
   const inputRef = useRef(null);
-  const [counter, setCounter] = useState(0);
   const [formData, setFormData] = useState({
     id:  null,
     text: "",
@@ -17,14 +17,13 @@ export const Header = () => {
   });
   
   const handleChangeFormData = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value, id:counter });
+    setFormData({ ...formData, [e.target.name]: e.target.value, id:v4() });
     inputRef.current.placeholder = "Type your wish here";
   };
   
   const uploadForm = (e) => {
     e.preventDefault();
     if (e.target.text.value !== "") {
-      setCounter(prevState => prevState + 1);
       setTask([...task, formData])
     }else{
       inputRef.current.placeholder = "You must write a wish first";

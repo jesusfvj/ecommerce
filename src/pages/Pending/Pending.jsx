@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, Body } from '../../components/index.js';
-export const Completed = () => {
+
+export const Pending = () => {
   return (
     <section className='home-container'>
           <Header />
