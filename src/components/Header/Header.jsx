@@ -7,14 +7,15 @@ import { v4 } from 'uuid';
 export const Header = () => {
   const { task, setTask, setInputRef, setClicked, clicked } = useContext(InputContext);
   const inputRef = useRef(null);
-  const [formData, setFormData] = useState({
+  const originalFormData = {
     id:  null,
     text: "",
     pending: true,
     inProgress: false,
     done: false,
     isEditing: false,
-  });
+  }
+  const [formData, setFormData] = useState([originalFormData]);
   
   const handleChangeFormData = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value, id:v4() });
@@ -25,6 +26,7 @@ export const Header = () => {
     e.preventDefault();
     if (e.target.text.value !== "") {
       setTask([...task, formData])
+      setFormData( originalFormData );
     }else{
       inputRef.current.placeholder = "You must write a wish first";
     }

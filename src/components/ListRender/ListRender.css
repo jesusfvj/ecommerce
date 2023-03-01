@@ -38,3 +38,28 @@
 .rewrite-icon{
     margin-top: 0.2rem;
 }
+
+.delete-icon:active, .rewrite-icon:active{
+    animation: rotation 500ms normal linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.edit-input{
+    margin: 0.9rem 0;
+    border: none;
+    font-size: 1rem;
+    background-color: #ececec;
+}
+
+.wish-list-edit{
+    background-color: #ececec;
+}
