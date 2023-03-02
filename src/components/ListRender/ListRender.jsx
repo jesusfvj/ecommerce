@@ -1,5 +1,7 @@
 import React from 'react'
 import './ListRender.css';
+import { useContext, useRef, useState } from 'react';
+import InputContext from '../../context/InputContext.jsx';
 import deleteIcon from '../../assets/images/deleteIcon.png';
 import rewriteIcon from '../../assets/images/rewriteIcon.png';
 import nowIcon from '../../assets/images/nowIcon.png';
@@ -8,21 +10,16 @@ import nowIconBlack from '../../assets/images/nowIconBlack.png';
 import pendingIconBlack from '../../assets/images/pendingIconBlack.png';
 import checkedIcon from '../../assets/images/checkedIcon.png';
 import checkedIconBlack from '../../assets/images/checkedIconBlack.png';
-import thumbUpIcon from '../../assets/images/thumbUpIcon.png';
-import thumbDownIcon from '../../assets/images/thumbDownIcon.png';
-import { useContext, useRef, useState } from 'react';
-import InputContext from '../../context/InputContext.jsx';
+import { EditInput } from '../EditInput/EditInput';
 
 export const ListRender = ({ object }) => {
-  const { task, setTask } = useContext(InputContext);
-  const [editText, setEditText] = useState(false);
+  const { task, setTask, editText, setEditText } = useContext(InputContext);
   const [editElement, setEditElement] = useState(null);
-  const [editString, setEditString] = useState("");
   const pendingIconRef = useRef([]);
   const inProgressIconRef = useRef([]);
   const checkedIconRef = useRef([]);
   const textRef = useRef([]);
-  const inputEditRef = useRef(null);
+  let inputEditRef = null;
 
   const completeWish = ({ id }) => {
     checkedIconRef.current[id].src = checkedIconBlack;
@@ -76,30 +73,20 @@ export const ListRender = ({ object }) => {
     setTask(filteredTasks);
   }
 
-  const handleChangeFormData = (e) => {
-    setEditString(e.target.value)
-  };
+  const handleChildRef = (ref) => {
+    inputEditRef = ref;
+
+    const filteredTasks = task.find(
+      (taskToReturn) => taskToReturn.id == editElement
+    );
+    inputEditRef.current.value = filteredTasks.text;
+  }
 
   const editWish = ({ id }) => {
     setEditElement(id)
     setEditText(true)
-    inputEditRef.current.value = "";
   }
 
-  const acceptEdit = ({id}) => {
-    task.forEach(value => {
-      if (value.id == id) {
-        value.text = editString;
-      }
-    })
-    setTask(task);
-    localStorage.setItem("wish-list", JSON.stringify(task));
-    setEditText(false)
-  }
-
-  const declineEdit = (element) => {
-    setEditText(false)
-  }
 
   return (
     <section className='all-list-section-container'>
@@ -109,22 +96,9 @@ export const ListRender = ({ object }) => {
             <>
               {editText & editElement == element.id
                 ?
-                <li key={index} data-id={element.id} className='wish-list-elements wish-list-edit'>
-                  <input
-                  value={editString}
-                  name="text"
-                  type="text"
-                  autoFocus
-                  className='edit-input'
-                  ref={inputEditRef}
-                  onChange={handleChangeFormData}/>
-                  <div className='icons-container'>
-                    <img className='list-icons thumb-up-icon' src={thumbUpIcon} alt='accept icon' onClick={() => acceptEdit(element)} />
-                    <img className='list-icons thumb-down-icon' src={thumbDownIcon} alt='decline icon' onClick={() => declineEdit(element)} />
-                  </div>
-                </li>
+                <EditInput key={element.id} index={index} element={element} onRef={handleChildRef} />
                 :
-                <li key={index} data-id={element.id} className='wish-list-elements'>
+                <li key={element.id} className='wish-list-elements'>
                   <p className='list-render-text' ref={(elementRef) => (textRef.current[element.id] = elementRef)}>{element.text}</p>
                   <div className='icons-container'>
                     <img className='list-icons pending-icon' src={element.pending === false ? pendingIcon : pendingIconBlack} alt='pending icon' ref={(elementRef) => (pendingIconRef.current[element.id] = elementRef)} onClick={() => pendingWish(element)} />
