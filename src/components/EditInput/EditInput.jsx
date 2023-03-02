@@ -13,17 +13,19 @@ export const EditInput = ({ element, onRef}) => {
     };
 
     const acceptEdit = ({ id }) => {
-        task.forEach(value => {
-            if (value.id == id) {
-                value.text = editString;
-            }
-        })
-        setTask(task);
-        localStorage.setItem("wish-list", JSON.stringify(task));
-        setEditText(false)
+        if(editString !== ""){
+            task.forEach(value => {
+                if (value.id == id) {
+                    value.text = editString;
+                }
+            })
+            setTask(task);
+            localStorage.setItem("wish-list", JSON.stringify(task));
+        }
+            setEditText(false)
     }
 
-    const declineEdit = (element) => {
+    const declineEdit = () => {
         setEditText(false)
     }
 

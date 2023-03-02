@@ -75,7 +75,6 @@ export const ListRender = ({ object }) => {
 
   const handleChildRef = (ref) => {
     inputEditRef = ref;
-
     const filteredTasks = task.find(
       (taskToReturn) => taskToReturn.id == editElement
     );
