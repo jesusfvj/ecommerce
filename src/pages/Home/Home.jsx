@@ -5,8 +5,8 @@ export function Home() {
     <div className="home">
       <NavBar />
       <Animation />
-      <MainImage location="home-path"/>
-      <Body>
+      <MainImage location="home-path" classAttribute="home-triangle-body"/>
+      <Body containerClassName="home-body-container">
         <Mosaic />
       </Body>
       <Footer />

@@ -6,6 +6,7 @@
     align-items: center;
     color: white;
     z-index: 3;
+    /* pointer-events: none; */
 }
 
 .background-translucid{
@@ -18,8 +19,16 @@
 .background-transparent{
     height: 4rem;
     padding: 0.5rem 0;
+    transition: 1.5s;
+}
+
+.background-none{
+    height: 3rem;
+    padding: 0.1rem 0;
+    color: rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
     transition: 1.5s;
+    pointer-events: none;
 }
 
 .nav-bar-logo{
@@ -48,7 +57,8 @@
 
 .nav-bar-nav-element-location{
     text-decoration: none;
-    color: rgb(169, 169, 169);
+    font-family:'Barrio', cursive;
+    color: white;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -60,4 +70,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 3rem;
+}
+
+.nav-bar-navigation-none{
+    color: rgba(0,0,0,0);
+    transition: 1.5s;
 }

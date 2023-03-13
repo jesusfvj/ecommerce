@@ -5,3 +5,8 @@
 .sm-cart-icon:hover{
     cursor: pointer;
 }
+
+.icon-invisible{
+    opacity: 0;
+    transition: 1.5s;
+}

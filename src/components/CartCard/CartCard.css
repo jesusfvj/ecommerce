@@ -1,0 +1,17 @@
+.cart-card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-list{
+list-style: none;
+}
+
+.cart-images{
+    width: 8rem;
+}
+
+.delete-button{
+    background-color: red;
+    margin-left: 1rem;
+}

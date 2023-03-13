@@ -37,6 +37,7 @@
 
 .footer-arrow-container{
     cursor: pointer;
+    margin-top: -4rem;
 }
 
 .footer-icon-container{

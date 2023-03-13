@@ -1,4 +1,4 @@
-.body-container{
+.home-body-container {
     position: relative;
     display: grid;
     background-color: rgb(255, 255, 255);
@@ -8,4 +8,125 @@
     column-gap: 0.5rem;
     row-gap: 0.5rem;
     z-index: 2;
+}
+
+.about-body-container {
+    position: relative;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    z-index: 2;
+}
+
+.gallery-body-container {
+    position: relative;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    z-index: 2;
+}
+
+/* artists collections */
+
+.all-artists{
+    position: relative;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    z-index: 2;
+}
+
+.gallery-andrea {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-manu {
+    height: 900vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(110, 1fr);
+}
+
+.gallery-tara {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-adriana {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-gloria {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-tarynne {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-helena {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-sanctus {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-corps {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-alberto {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-beyond {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-femmes {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-rumania {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-ease {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
+}
+
+.gallery-cry {
+    height: 1500vh;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(186, 1fr);
 }

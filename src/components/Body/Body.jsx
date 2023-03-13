@@ -1,10 +1,10 @@
 import './Body.css';
 
-export const Body = (props) => {
+export const Body = ({children, containerClassName}) => {
   return (
     <>
-        <div className="body-container">
-        {props.children}
+        <div className={containerClassName}>
+        {children}
         </div>
     </>
   )

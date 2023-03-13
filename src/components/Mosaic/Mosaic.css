@@ -1,3 +1,9 @@
+.black-background{
+    background-color: black;
+    grid-column: 1 / span 15;
+    grid-row: 61 / span 46;
+}
+
 /* Photos */
 
 .mosaic-image-2 {
@@ -99,7 +105,7 @@
 .mosaic-image-14 {
     grid-column: 1 / span 7;
     grid-row: 156 / span 10;
-    background-image: url("../../assets/images/mainImage/14.jpeg");
+    background-image: url("../../assets/images/mainImage/14.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -135,7 +141,7 @@
 }
 
 .mosaic-image-text-17 {
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     grid-column: 6 / span 10;
     grid-row: 13 / span 14;
     background-image: url("../../assets/images/texts/creationModeOn.png");
@@ -144,7 +150,6 @@
 }
 
 .mosaic-image-text-18 {
-    mix-blend-mode: difference;
     grid-column: 3 / span 6;
     grid-row: 65 / span 27;
     background-image: url("../../assets/images/texts/visuals.png");
@@ -180,6 +185,7 @@
     font-size: 5rem;
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .mosaic-hover-2 {
@@ -308,35 +314,46 @@
 
 .mosaic-hover-text-9{
     font-size: 2rem;
-    padding:  8rem 11.5rem 0 0;
+    padding: 8rem 0rem 0 11.5rem;
 }
 
-/* 
 
 .mosaic-hover-text-10{
-    padding: ;
+    transform: rotate(85deg);
+    font-size: 4rem;
+    padding: 0 0 25rem 23rem;
 }
 
 .mosaic-hover-text-11{
-    padding: ;
+    font-size: 10rem;
+    padding: 0 0 20rem 0;
 }
 
 .mosaic-hover-text-12{
-    padding: ;
+    font-size: 7rem;
+    padding: 30rem 28rem 0 0;
 }
 
 .mosaic-hover-text-13{
-    padding: ;
+    color: rgb(154, 154, 154);
+    transform: rotate(-30deg);
+    font-size: 4rem;
+    padding: 10rem 6rem 0 0;
 }
 
 .mosaic-hover-text-14{
-    padding: ;
+    color: rgb(200, 200, 200);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -1rem;
+    padding: 0 0 11rem 13rem;
 }
 
 .mosaic-hover-text-15{
-    padding: ;
+    padding: 0 0 24rem 0;
 }
 
 .mosaic-hover-text-1{
-    padding: ;
-} */
+    font-size: 6rem;
+    padding: 0 10rem 0 0;
+}

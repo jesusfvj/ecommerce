@@ -1,7 +1,7 @@
 import "./TopArrow.css";
 
-export const TopArrow = ({classAttribute}) => {
+export const TopArrow = ({classAttribute, handleClick}) => {
   return (
-    <div className={classAttribute}></div>
+    <div className={classAttribute} onClick={handleClick}></div>
   )
 }

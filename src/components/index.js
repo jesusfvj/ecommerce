@@ -6,3 +6,8 @@ export * from './Body/Body';
 export * from './Animation/Animation';
 export * from './Footer/Footer';
 export * from './Mosaic/Mosaic';
+export * from './ScrollTop/ScrollTop';
+export * from './GalleryMosaic/GalleryMosaic';
+export * from './NavList/NavList';
+export * from './FramesChoice/FramesChoice';
+export * from './CartCard/CartCard';

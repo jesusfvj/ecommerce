@@ -1,0 +1,89 @@
+.all-collection-images{
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.gallery-mosaic-hover-all{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barrio', cursive;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+
+.artist-gallery-title-container{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+}
+
+.artist-gallery-title{
+    color: rgb(132, 132, 132);
+    font-family: 'Barrio', cursive;
+    font-size: 5rem;
+}
+
+.expand-div-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(190, 190, 190, 0.6);
+    z-index: 5;
+}
+
+.expand-image-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    height: 80%;
+}
+
+.expand-img-child{
+    object-fit: contain;
+    width: 100%;
+}
+
+.exit-x{
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+    background-image: url('../../assets/images/icons/exitIcon.png');
+    background-size: contain;
+    background-position: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.frames-choice-container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    /* background-color: rgba(190, 190, 190, 1); */
+}
+
+.button-add-to-cart{
+    width: 5rem;
+    height: 5rem;
+    padding: 5rem 0;
+    background-image: url('../../assets/images/icons/addToCartHeart.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(190, 190, 190, 0);
+}

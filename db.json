@@ -1,0 +1,239 @@
+{
+    "imagesMain":
+    [
+        {
+            "id": 1,
+            "title": "andrea"
+        },
+        {
+            "id": 2,
+            "title": "manu rico"
+        },
+        {
+            "id": 3,
+            "title": "tara"
+        },
+        {
+            "id": 4,
+            "title": "adriana"
+        },
+        {
+            "id": 5,
+            "title": "gloria"
+        },
+        {
+            "id": 6,
+            "title": "tarynne"
+        },
+        {
+            "id": 7,
+            "title": "helena"
+        },
+        {
+            "id": 8,
+            "title": "sanctus"
+        },
+        {
+            "id": 9,
+            "title": "corps"
+        },
+        {
+            "id": 10,
+            "title": "alberto"
+        },
+        {
+            "id": 11,
+            "title": "beyond"
+        },
+        {
+            "id": 12,
+            "title": "femmes"
+        },
+        {
+            "id": 13,
+            "title": "180"
+        },
+        {
+            "id": 14,
+            "title": "ease"
+        },
+        {
+            "id": 15,
+            "title": "cry me a river"
+        },
+        {
+            "id": 16,
+            "content":"collections"
+        },
+        {
+            "id": 17,
+            "content":"creation mode on"
+        },
+        {
+            "id": 18,
+            "content":"visuals"
+        },
+        {
+            "id": 19,
+            "content":"find your"
+        },
+        {
+            "id": 20,
+            "content":"own style"
+        }
+    ],
+
+    "gallery":
+    [
+        {
+            "id": 1,
+            "artist": "manu",
+            "url": "manu/1.jpg"
+        },
+        {
+            "id": 2,
+            "artist": "manu",
+            "url": "manu/2.jpg"
+        },
+        {
+            "id": 3,
+            "artist": "manu",
+            "url": "manu/3.jpg"
+        },
+        {
+            "id": 4,
+            "artist": "manu",
+            "url": "manu/4.jpg"
+        },
+        {
+            "id": 5,
+            "artist": "manu",
+            "url": "manu/5.jpg"
+        },
+        {
+            "id": 6,
+            "artist": "manu",
+            "url": "manu/6.jpg"
+        },
+        {
+            "id": 7,
+            "artist": "manu",
+            "url": "manu/7.jpg"
+        },
+        {
+            "id": 8,
+            "artist": "manu",
+            "url": "manu/8.jpg"
+        },
+        {
+            "id": 9,
+            "artist": "manu",
+            "url": "manu/9.jpg"
+        },
+        {
+            "id": 10,
+            "artist": "manu",
+            "url": "manu/10.jpg"
+        },
+        {
+            "id": 11,
+            "artist": "manu",
+            "url": "manu/11.jpg"
+        },
+        {
+            "id": 12,
+            "artist": "manu",
+            "url": "manu/12.jpg"
+        },
+        {
+            "id": 13,
+            "artist": "manu",
+            "url": "manu/13.jpg"
+        },
+        {
+            "id": 14,
+            "artist": "tara",
+            "url": "tara/1.jpeg"
+        },
+        {
+            "id": 15,
+            "artist": "tara",
+            "url": "tara/2.jpeg"
+        },
+        {
+            "id": 16,
+            "artist": "tara",
+            "url": "tara/3.jpeg"
+        },
+        {
+            "id": 17,
+            "artist": "tara",
+            "url": "tara/4.jpeg"
+        },
+        {
+            "id": 18,
+            "artist": "tara",
+            "url": "tara/5.jpeg"
+        },
+        {
+            "id": 19,
+            "artist": "tara",
+            "url": "tara/6.jpeg"
+        },
+        {
+            "id": 20,
+            "artist": "tara",
+            "url": "tara/7.jpeg"
+        },
+        {
+            "id": 21,
+            "artist": "tara",
+            "url": "tara/8.jpeg"
+        },
+        {
+            "id": 22,
+            "artist": "tara",
+            "url": "tara/9.jpeg"
+        },
+        {
+            "id": 23,
+            "artist": "tara",
+            "url": "tara/10.jpeg"
+        },
+        {
+            "id": 24,
+            "artist": "tara",
+            "url": "tara/11.jpeg"
+        },
+        {
+            "id": 25,
+            "artist": "tara",
+            "url": "tara/12.jpeg"
+        },
+        {
+            "id": 26,
+            "artist": "tara",
+            "url": "tara/13.jpeg"
+        },
+        {
+            "id": 27,
+            "artist": "tara",
+            "url": "tara/14.jpeg"
+        },
+        {
+            "id": 28,
+            "artist": "tara",
+            "url": "tara/15.jpeg"
+        },
+        {
+            "id": 29,
+            "artist": "tara",
+            "url": "tara/16.jpeg"
+        },
+        {
+            "id": 30,
+            "artist": "tara",
+            "url": "tara/17.jpeg"
+        }
+    ]
+}

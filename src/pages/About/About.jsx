@@ -5,7 +5,7 @@ export const About = () => {
     <div className="about">
       <NavBar />
       <MainImage location="about-path"/>
-      <Body />
+      <Body containerClassName="about-body-container"/>
       <Footer />
     </div>
   )
