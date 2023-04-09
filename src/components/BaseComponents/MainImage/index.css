@@ -1,0 +1,96 @@
+.main-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 160vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-image-rights-container{
+    height: 160vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* locations */
+.home-path{
+    background-image: url("../../../assets/images/mainImage/1.jpg");
+}
+
+.about-path{
+    background-image: url("../../../assets/images/mainImage/jesus.jpeg");
+}
+
+.gallery-path{
+    background-image: url("../../../assets/images/mainImage/10.jpg");
+}
+
+/* artists collections */
+.andrea{
+    background-image: url("../../../assets/images/mainImage/1.jpg");
+}
+
+.manu{
+    background-image: url("../../../assets/images/mainImage/2.jpg");
+}
+
+.tara{
+    background-image: url("../../../assets/images/mainImage/3.jpeg");
+    background-position: bottom;
+}
+
+.adriana{
+    background-image: url("../../../assets/images/mainImage/4.jpg");
+}
+
+.gloria{
+    background-image: url("../../../assets/images/mainImage/5.jpg");
+}
+
+.tarynne{
+    background-image: url("../../../assets/images/mainImage/6.jpg");
+}
+
+.helena{
+    background-image: url("../../../assets/images/mainImage/7.jpg");
+}
+
+.corps{
+    background-image: url("../../../assets/images/mainImage/8.jpg");
+}
+
+.sanctus{
+    background-image: url("../../../assets/images/mainImage/9.jpg");
+}
+
+.alberto{
+    background-image: url("../../../assets/images/mainImage/10.jpg");
+}
+
+.beyond{
+    background-image: url("../../../assets/images/mainImage/11.jpg");
+}
+
+.femmes{
+    background-image: url("../../../assets/images/mainImage/12.jpg");
+}
+
+.rumania{
+    background-image: url("../../../assets/images/mainImage/13.jpg");
+}
+
+.ease{
+    background-image: url("../../../assets/images/mainImage/14.jpg");
+}
+
+.cry{
+    background-image: url("../../../assets/images/mainImage/15.jpg");
+}

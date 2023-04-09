@@ -1,7 +1,12 @@
-import { Home, About, Gallery, Contact, Cart, LogIn } from "../pages/index.js";
-import { ScrollTop } from "../components/index.js";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import PublicRoute from "./PublicRoute/PublicRoute.jsx";
+import PublicRoute from "./PublicRoute";
+import { Home } from "../pages/Home.jsx";
+import { About } from "../pages/About.jsx";
+import { Gallery } from "../pages/Gallery.jsx";
+import { LogIn } from "../pages/Login.jsx";
+import { Cart } from "../pages/Cart.jsx";
+import { Contact } from "../pages/Contact.jsx";
+import { ScrollTop } from "../components/index.js";
 
 export const Router = () => {
   return (

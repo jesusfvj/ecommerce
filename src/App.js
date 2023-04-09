@@ -1,4 +1,3 @@
-import './App.css';
 import { Fetch } from './Fetch/Fetch';
 import { Router } from './routes/Router.jsx';
 import { FetchProvider } from "./context/FetchContext.jsx";

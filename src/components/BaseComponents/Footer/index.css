@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Muhaqu1";
+    src: local("Muhaqu1"),
+     url('../../../assets/fonts/Muhaqu1.otf') format("truetype");
+    }
+
+@font-face {
+    font-family: "Muhaqu2";
+    src: local("Muhaqu2"),
+     url('../../../assets/fonts/Muhaqu2.ttf') format("truetype");
+    }
+
+.main-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../assets/images/gradients/green.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.footer-arrow-container{
+    cursor: pointer;
+    margin-top: -4rem;
+}
+
+.footer-icon-container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-bottom: -1rem;
+}
+
+.footer-text-back{
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footer-text-find{
+    font-family: 'Muhaqu1';
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-right: 3.5rem;
+}
+
+.footer-text-find-span{
+    font-family: 'barrio';
+}
+
+.footer-text-daonimia{
+    font-family: 'Muhaqu1';
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 6rem;
+}
+
+.footer-text-daonimia-span{
+    font-family: 'barrio';
+}
