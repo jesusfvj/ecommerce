@@ -64,7 +64,7 @@ export const NavBar = () => {
           <NavLink to="/contact-me" className={`${location.pathname === "/contact-me" ? `nav-bar-nav-element-location` : `nav-bar-nav-elements`} ${isVisible === 'third' && `nav-bar-navigation-none`}`}>Contact</NavLink>
         </div>
         <div className="nav-bar-icons">
-        <NavLink to="/private" >
+        <NavLink to="/cart" >
           <CartIcon icon={`${isVisible === 'third' && `icon-invisible`}`} />
         </NavLink>
           <InstaIcon classAttribute={`sm-inst-icon ${isVisible === 'third' && `icon-invisible`}`} />

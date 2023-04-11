@@ -1,17 +1,21 @@
 import { Fetch } from './Fetch/Fetch';
 import { Router } from './routes/Router.jsx';
 import { FetchProvider } from "./context/FetchContext.jsx";
-import { AuthContextProvider } from "./context/AuthContext.jsx";
+
+import UserProvider from './context/UserContext/UserContext';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <AuthContextProvider>
-      <FetchProvider>
-        <Fetch />
-        <Router />
-      </FetchProvider>
-      </AuthContextProvider>
+      <UserProvider>
+        <BrowserRouter>
+            <FetchProvider>
+              <Fetch />
+              <Router />
+            </FetchProvider>
+        </BrowserRouter>
+      </UserProvider>
     </div>
   );
 }

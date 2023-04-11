@@ -1,18 +1,19 @@
 import { useContext, useEffect, useState } from 'react';
 import FetchContext from '../context/FetchContext.jsx';
 import { Fetch } from '../Fetch/Fetch';
-import { useAuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router';
 import { NavBar, CartCard } from '../components';
+import { useUser } from '../context/UserContext/UserContext.jsx';
 
 const urlJson = `http://localhost:3000/gallery`;
 
 export const Cart = () => {
-  const {logout} = useAuthContext();
+  const { logout } = useUser();
   const { cart } = useContext(FetchContext);
   const [photoCounter, setPhotCounter] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const navigate = useNavigate();
+
   const handleLogOut = () =>{
     logout();
     navigate("/home");

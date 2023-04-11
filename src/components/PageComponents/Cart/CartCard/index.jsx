@@ -84,7 +84,6 @@ export const CartCard = ({ idState, collection, frame, quantity, setTotalPrice }
                 }})
             setCart(cart);
         }
-        console.log(cart)
     }, [counter]) */
 
     return (

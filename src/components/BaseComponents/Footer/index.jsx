@@ -7,7 +7,6 @@ import "./index.css";
 export const Footer = () => {
     const handleClick = () => {
         const element = document.querySelector('.react-parallax-background');
-        console.log(element)
         if (element) {
           element.scrollIntoView();
           /* { behavior: 'smooth' } */
