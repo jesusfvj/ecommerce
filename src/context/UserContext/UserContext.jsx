@@ -1,7 +1,7 @@
 import { useEffect, createContext, useReducer } from "react";
 import { useContext } from "react";
 import { loginUser, registerUser } from "../../API/UserApi/UserApi";
-import { types } from "../Types/types";
+import { userTypes } from "../Types/userTypes";
 import { userReducer } from "./UserReducer";
 
 export const UserContext = createContext();
@@ -27,21 +27,28 @@ export const UserProvider = ({ children }) => {
 
   const login = async (user) => {
     const response = await loginUser(user);
-
-    if (response.length) {
-      const { fullName, email } = response[0];
-      dispatch({ type: types.login, payload: { email, fullName } });
+    if (response.ok) {
+      const { fullName, email } = response.user;
+      dispatch({ type: userTypes.login, payload: { email, fullName } });
+      return response
+    } else {
+      console.log(response)
     }
   };
 
-  const register = (user) => {
-    const { email, fullName } = user;
-    registerUser(user);
-    dispatch({ type: types.register, payload: { email, fullName } });
+  const register = async (user) => {
+    const response = await registerUser(user);
+    if(response.ok){
+      const { name, lastName, email } = response;
+      dispatch({ type: userTypes.register, payload: { name, lastName, email } });
+      return response
+    } else {
+      console.log(response)
+    }
   };
 
   const logout = () => {
-    dispatch({ type: types.logout });
+    dispatch({ type: userTypes.logout });
   };
 
   return (

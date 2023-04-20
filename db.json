@@ -232,36 +232,5 @@
       "artist": "tara",
       "url": "tara/17.jpeg"
     }
-  ],
-  "user": [
-    {
-      "id": 1,
-      "first_name": "Assembler",
-      "last_name": "Institute",
-      "email": "music@assemblerschool.com",
-      "profilePicture": "https://robohash.org/suntvoluptasnisi.png?size=50x50&set=set1",
-      "isLoggedin": false
-    },
-    {
-      "fullName": "Miquel",
-      "email": "m@m.com",
-      "password": "m",
-      "repPassword": "m",
-      "id": 2
-    },
-    {
-      "fullName": "a",
-      "email": "a@a.com",
-      "password": "a",
-      "repPassword": "a",
-      "id": 3
-    },
-    {
-      "fullName": "u",
-      "email": "u@u.com",
-      "password": "u",
-      "repPassword": "u",
-      "id": 4
-    }
   ]
 }

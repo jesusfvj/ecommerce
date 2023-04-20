@@ -1,28 +1,33 @@
 export const registerUser = async (user) => {
-  const res = await fetch("http://localhost:3010/adduser", {
+  const res = await fetch("http://localhost:4000/user/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      ...user,
+      user
     })
   });
   const data = await res.json();
-  if (data.ok) {
-    return data;
-  }
+  return data;
 };
 
 export const loginUser = async (user) => {
-  const { email, password } = user;
-  const res = await fetch(
-    "http://localhost:3010/getuser"
-  );
+  const {
+    email,
+    password
+  } = user;
+  const res = await fetch("http://localhost:4000/user/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      user
+    })
+  });
   const data = await res.json();
-  if (data.ok) {
-    return data;
-  }
+  return data;
 };
 
 /* const getTodos = async () => {

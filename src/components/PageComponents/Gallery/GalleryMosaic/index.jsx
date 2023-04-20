@@ -41,7 +41,7 @@ export const GalleryMosaic = () => {
     };
 
     const handleClick = (url, id) => {
-        isClicked===false?setIsClicked(true):setIsClicked(false);
+        !isClicked?setIsClicked(true):setIsClicked(false);
         setUrlState(url);
         setIdState(id);
     }

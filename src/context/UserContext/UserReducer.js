@@ -1,18 +1,18 @@
-import { types } from "../Types/types";
+import { userTypes } from "../Types/userTypes";
 
 export const userReducer = (state = {}, action) => {
   switch (action.type) {
-    case types.register:
+    case userTypes.register:
       return {
         ...state,
         user: { ...action.payload },
       };
-    case types.login:
+    case userTypes.login:
       return {
         ...state,
         user: {...action.payload},
       };
-    case types.logout:
+    case userTypes.logout:
       return {
         ...state,
         user: null,
